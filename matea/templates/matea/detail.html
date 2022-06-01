@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+
+<form action="{% url 'matea:vote' question.id %}" method="post">
+{% csrf_token %}
+<fieldset>
+    <legend><h1>How are you?</h1></legend>
+    <p>
+        <input type="radio" name="choice" id="choice1" value="1">
+        <label for="choice1">Good</label>
+        <br>
+        <input type="radio" name="choice" id="choice2" value="2">
+        <label for="choice2">Bad</label>
+        <br>
+    </p>
+</fieldset>
+<input type="submit" value="Vote">
+</form>
