@@ -1,0 +1,98 @@
+ul a {
+    color:green;
+    outline: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1,5px solid #ffc9e5;
+    background:#ffc9e5;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    margin-top: 30px;
+    margin-left: 24rem;
+}
+#h2 {
+  text-align: center;
+  margin-right: 1rem;
+}
+
+#btn {
+  margin-left: 24.5rem;
+}
+
+body {
+    background-color: pink;
+}
+#welcome {
+    background: #ff94d2;
+    padding: 6rem 12%;
+}
+
+#latest-posts {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 60rem;
+    height: 70rem;
+    margin: -6rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  #latest-posts h2 {
+    text-align: center;
+  }
+  
+  #latest-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  #latest-posts li {
+    flex: 1;
+  }
+  
+  #about {
+    text-align: center;
+    padding: 3rem;
+    background-color: pink;
+    margin-top: 5rem;
+  }
+  #contact {
+    text-align: center;
+    padding: 1rem;
+    background-color: pink;
+    margin-top: 3rem;
+  }
+  
+  #comments{
+    margin: 3rem auto;
+    width:90%;
+    max-width: 60rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.25);
+    padding: 1rem 2rem;
+  }
+  #a {
+    margin-left: 3rem auto;
+    align-items: center;
+    position: inherit;
+  }
+  
+  #about h2 {
+    font-size: 3rem;
+  }
+  
+  #about p {
+    font-size: 1.5rem;
+    color: #353535;
+  }
+
+  
