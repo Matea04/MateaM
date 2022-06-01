@@ -1,0 +1,30 @@
+body {
+    background-color: pink;
+}
+
+button {
+    color:green;
+    outline: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1,5px solid #ffc9e5;
+    background:#ffc9e5;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    margin-top: 30px;
+}
+
+a {
+    color:#ff73c5;
+    
+}
+h1 {
+    background: #ff94d2;
+    padding: 1rem 3%;
+}
+
