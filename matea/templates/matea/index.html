@@ -1,0 +1,108 @@
+{% load static %}
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="#home" class="w3-bar-item w3-button"><b>Home</b></a>
+              <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+            <a href="#myposts" class="w3-bar-item w3-button">My Pictures</a>
+            <a href="#aboutme" class="w3-bar-item w3-button">About Me</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <a href="login" class="w3-bar-item w3-button">Login</a>
+            <a href="register" class="w3-bar-item w3-button">Register</a>
+              </div>
+            </div>
+          </div>
+<div class="w3-container w3-padding-32" id="home"></div>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<section id="welcome">
+    <header id="h2">
+    <h2>MATEA MIHALJEVIĆ</h2>
+    </header>
+    <p id="h2">Hello! Welcome to my blog</p>
+
+    {% if latest_question_list %}
+    
+    {% for question in latest_question_list %}
+        <ul ><a href ="/{{ question.id }}/"><label for="question">How are you?</label></a></ul>
+    {% endfor %}
+    
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</section>
+
+<section id="latest-posts">
+    <div class="w3-container w3-padding-32" id="myposts"></div>
+    <h2>My Pictures</h2>
+        <ul>
+            <img src="{% static 'images/nature.jpg' %}" height="250" width="200" alt="nesto"> 
+            <img src="{% static 'images/dog.jpg' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/tulip.jpg' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/croatia.jpg' %}" height="250" width="200" alt="nesto">
+        </ul>
+        <br>
+        <ul>
+            <img src="{% static 'images/cliff.jpeg' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/lake.jpg' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/mountain.webp' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/summer.jpg' %}" height="250" width="200" alt="nesto">
+        </ul>
+        <br>
+        <ul>
+            <img src="{% static 'images/spring.jpg' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/sky.jpg' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/sea.jpg' %}" height="250" width="200" alt="nesto">
+            <img src="{% static 'images/book.jpeg' %}" height="250" width="200" alt="nesto">
+        </ul>
+</section>
+<section id="about">
+    <div class="w3-container w3-padding-32" id="aboutme"></div>
+    <h2 id="a">About me</h2>
+    <p>
+       My name is Matea Mihaljević, I'm 17 years old, I'm web designer and I like this job.
+    </p>
+    <p>
+        I love animals, travels, sea, nature, summer,...
+    </p>
+</section>
+
+<section id="about">
+    <div class="w3-container w3-padding-32" id="contact"></div>
+    <h2 id="m">Contact</h2>
+    <p>
+       e-mail: mateamihaljevic@ssklivno.net
+    </p>
+    <p>
+        number: 063 589 297
+    </p>
+</section>
+    </form>
+</div>
+</div>
+<center><section id="comments">
+<h2>Your Comment</h2>
+<div class="from-control ">
+    <label for="id_user_name">Your Name:</label>
+    <br>
+    <input type="text" name="user_name" maxlength="50" required="" id="id_user_name">
+    <br>
+    
+</div>
+<div class="from-control ">
+    <label for="id_user_email">Your Email:</label>
+    <br>
+    <input type="email" name="user_email" maxlength="254" required="" id="id_user_email">
+    <br>
+    
+</div>
+<div class="from-control ">
+    <label for="id_text">Your Comment:</label>
+    <br>
+    <textarea name="text" cols="40" rows="10" maxlength="300" required="" id="id_text"></textarea>
+    <br>
+    
+</div>
+<button class="button">Submit</button>
+</section></center>
+
