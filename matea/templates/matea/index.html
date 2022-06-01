@@ -21,15 +21,7 @@
     </header>
     <p id="h2">Hello! Welcome to my blog</p>
 
-    {% if latest_question_list %}
-    
-    {% for question in latest_question_list %}
-        <ul ><a href ="/{{ question.id }}/"><label for="question">How are you?</label></a></ul>
-    {% endfor %}
-    
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+
 </section>
 
 <section id="latest-posts">
